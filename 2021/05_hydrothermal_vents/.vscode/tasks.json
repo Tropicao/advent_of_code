@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cargo",
+			"command": "test",
+			"problemMatcher": [
+				"$rustc"
+			],
+			"group": "test",
+			"label": "rust: cargo test"
+		},
+		{
+			"label": "Lint",
+			"type": "shell",
+			"command": "cargo",
+			"args": ["clippy"],
+			"problemMatcher": "$rustc"
+		},
+		{
+			"label": "Format",
+			"type": "shell",
+			"command": "cargo",
+			"args": ["fmt"],
+			"problemMatcher": "$rustc",
+		}
+	]
+}
